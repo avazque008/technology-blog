@@ -61,3 +61,28 @@
     color: #005FB8;
 }
 
+#logout {
+    font-weight: 500;
+    color: white;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+}
+
+.forms {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #005FB8;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.forms h3 {
+    text-decoration: underline;
+}
+
+.forms div {
+    padding: 10px;
+}
