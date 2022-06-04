@@ -1,5 +1,7 @@
-<div>
-    <h1>
-        Hey there!
-    </h1>
-</div>
+<ul class="container post-list">
+    {{#each posts as |post|}}
+    <li>
+        {{> post-info post }}
+    </li>
+    {{/each}}
+</ul>
