@@ -12,39 +12,44 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="container">
-            <nav class="row nav justify-content-evenly">
-                <div class="col-12 col-md-4">
-                    <a href="/">
-                        <h3 class="text-center">Home</h3>
-                    </a>
-                </div>
-                {{#if loggedIn}}
-                <div class="col-12 col-md-4">
-                    <a href="/dashboard">
-                        <h3 class="text-center">Dashboard</h3>
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 text-center">
-                    <button id="logout" class="logout-btn">Log Out</button>
-                </div>
-                {{else}}
-                <div class="col-12 col-md-4">
-                    <a href="/login">
-                        <h3 class="text-center">Log In</h3>
-                    </a>
-                </div>
-                {{/if}}
-            </nav>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <nav class="row nav justify-content-evenly">
+                    <div class="col-12 col-md-4">
+                        <a href="/">
+                            <h3 class="text-center">Home</h3>
+                        </a>
+                    </div>
+                    {{#if loggedIn}}
+                    <div class="col-12 col-md-4">
+                        <a href="/dashboard">
+                            <h3 class="text-center">Dashboard</h3>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <button id="logout" class="logout-btn">Log Out</button>
+                    </div>
+                    {{else}}
+                    <div class="col-12 col-md-4">
+                        <a href="/login">
+                            <h3 class="text-center">Log In</h3>
+                        </a>
+                    </div>
+                    {{/if}}
+                </nav>
+            </div>
+            <div class="title">
+                <h1 class="text-center">The Tech Blog</h1>
+            </div>
         </div>
-        <div class="title">
-            <h1 class="text-center">The Tech Blog</h1>
-        </div>
+        <main>
+            {{{ body }}}
+        </main>
+        <footer>
+            Thanks for visiting!
+        </footer>
     </div>
-    <main>
-        {{{ body }}}
-    </main>
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
     {{/if}}

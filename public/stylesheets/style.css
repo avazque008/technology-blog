@@ -1,9 +1,11 @@
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     background-color: aliceblue;
+    position: relative;
 }
 
 .header {
@@ -23,7 +25,7 @@ body {
     color: white;
     width: 50%;
     margin: auto;
-    padding: 10px;
+    padding: 15px 20px;
     background-color: #47A6FF;
     border-radius: 30px;
 }
@@ -36,7 +38,7 @@ body {
 .logout-btn,
 .login-btn,
 .signup-btn {
-    padding: 9px;
+    padding: 15px 12px;
     width: 50%;
     border-radius: 30px;
     font-size: 24px;
@@ -93,6 +95,7 @@ body {
     padding: 10px 15px;
     font-size: 20px;
     background-color: aliceblue;
+    border-radius: 3px;
 }
 
 .post-content a {
@@ -147,13 +150,19 @@ body {
     font-weight: 600;
 }
 
-.comment-body {
+.comment-body,
+.post-content-textarea,
+.post-tile-textarea {
     width: 100%;
     min-height: 180px;
     background-color: white;
     padding: 15px;
     border: 1px solid #47A6FF;
     border-radius: 10px;
+}
+
+.post-tile-textarea {
+    min-height: 30px;
 }
 
 .comment-btn {
@@ -169,4 +178,85 @@ body {
     font-weight: 500;
     border-radius: 10px;
     border: none;
+}
+
+.user-post-list {
+    background-color: #47A6FF;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.user-post-list li {
+    list-style: none;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.user-posts-title {
+    padding: 15px;
+    color: aliceblue;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.edit-link {
+    background-color: aliceblue;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #47A6FF;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.new-post-labels,
+.new-post-heading {
+    font-weight: 600;
+    color: #005FB8;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.new-post-heading {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    width: 100%;
+    font-size: 25px;
+    margin-top: 40px;
+    color: white;
+    background-color: #47A6FF;
+    font-weight: 600;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-new-post {
+    margin: 20px 0;
+    padding: 20px 0;
+}
+.create-btn {
+    width: 50%;
+    margin: auto;
+    background-color: #005FB8;
+    padding: 18px;
+    border-radius: 10px;
+    border: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
 }
