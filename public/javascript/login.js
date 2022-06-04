@@ -17,8 +17,8 @@ async function loginFormHandler(event) {
         if (response.ok) {
             document.location.replace('/');
             // document.location.replace('/dashboard/');
-        } else {
-            alert(response.statusText);
+        } else if (response.statusText === 'Bad Request') {
+            alert('Incorrect username or password, please try again!');
         }
     }
 }

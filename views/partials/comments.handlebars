@@ -1,12 +1,13 @@
-<div class="comments">
+<article class="row comment-list">
+    <h3 class="comment-heading">Comments</h3>
     {{#each this}}
-    <section class="comment">
-        <div class="meta">
-            {{user.username}} on {{format_date created_at}}
-        </div>
-        <div class="text">
+    <div class="comment">
+        <div class="col-12 comment-text">
             {{comment_text}}
         </div>
-    </section>
+        <div class="col-12 comment-user">
+            - {{user.username}} on {{format_date created_at}}
+        </div>
+    </div>
     {{/each}}
-</div>
+</article>
