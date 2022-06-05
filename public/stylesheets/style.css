@@ -214,7 +214,8 @@ body {
 .new-post-heading,
 .update-post-labels,
 .update-post-heading,
-.comment-heading {
+.comment-heading,
+.comment-heading-list {
     font-weight: 600;
     color: #005FB8;
     padding: 10px;
@@ -223,10 +224,15 @@ body {
 
 .new-post-heading,
 .update-post-heading,
-.comment-heading {
+.comment-heading,
+.comment-heading-list {
     font-size: 30px;
     text-align: center;
     text-decoration: underline;
+}
+
+.comment-heading-list {
+    color: aliceblue;
 }
 
 footer {
