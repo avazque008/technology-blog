@@ -211,14 +211,17 @@ body {
 }
 
 .new-post-labels,
-.new-post-heading {
+.new-post-heading,
+.update-post-labels,
+.update-post-heading {
     font-weight: 600;
     color: #005FB8;
     padding: 10px;
     font-size: 20px;
 }
 
-.new-post-heading {
+.new-post-heading,
+.update-post-heading {
     font-size: 30px;
     text-align: center;
     text-decoration: underline;
@@ -245,13 +248,16 @@ footer {
     flex-direction: column;
 }
 
-.create-new-post {
+.create-new-post,
+.update-new-post {
     margin: 20px 0;
     padding: 20px 0;
 }
-.create-btn {
-    width: 50%;
+.create-btn,
+.update-post-btn,
+.delete-post-btn {
     margin: auto;
+    width: 50%;
     background-color: #005FB8;
     padding: 18px;
     border-radius: 10px;
@@ -259,4 +265,9 @@ footer {
     color: aliceblue;
     font-size: 20px;
     font-weight: bold;
+}
+
+.update-post-btn,
+.delete-post-btn {
+    margin: 10px;
 }

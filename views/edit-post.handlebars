@@ -1,0 +1,25 @@
+<article class="container update-post">
+    <h2 class="update-post-heading">
+        Edit Post
+    </h2>
+    <form class="row update-post-form">
+        <div class="col-12">
+            <label for="post-title" class="update-post-labels">Title: </label>
+            <input type="text" id="post-title" name="post-title" class="post-tile-textarea" value="{{post.title}}" />
+        </div>
+        <div class="col-12 justify-content-center">
+            <div>
+                <label for="post-content" class="update-post-labels">Content:</label>
+            </div>
+            <textarea id="post-content" name="post-content"
+                class="post-content-textarea">{{post.post_content}}</textarea>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="update-post-btn col-12">Update Post</button>
+            <button type="button" class="delete-post-btn col-12">Delete Post</button>
+        </div>
+    </form>
+</article>
+
+
+<script src="/javascript/edit-post.js"></script>
