@@ -213,7 +213,8 @@ body {
 .new-post-labels,
 .new-post-heading,
 .update-post-labels,
-.update-post-heading {
+.update-post-heading,
+.comment-heading {
     font-weight: 600;
     color: #005FB8;
     padding: 10px;
@@ -221,7 +222,8 @@ body {
 }
 
 .new-post-heading,
-.update-post-heading {
+.update-post-heading,
+.comment-heading {
     font-size: 30px;
     text-align: center;
     text-decoration: underline;
