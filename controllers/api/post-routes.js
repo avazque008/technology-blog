@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Post, User, Comment } = require('../../models');
+const securityAuth = require('../../utils/security');
 
 // GET all posts
 router.get('/', (req, res) => {
@@ -73,7 +74,7 @@ router.get('/:id', (req, res) => {
 });
 
 // CREATE a post
-router.post('/', (req, res) => {
+router.post('/', securityAuth, (req, res) => {
     Post.create({
         title: req.body.title,
         post_content: req.body.post_content,
@@ -87,7 +88,7 @@ router.post('/', (req, res) => {
 });
 
 // UPDATE a post
-router.put('/:id', (req, res) => {
+router.put('/:id', securityAuth, (req, res) => {
     Post.update(
         {
             title: req.body.title,
@@ -114,7 +115,7 @@ router.put('/:id', (req, res) => {
 
 
 // DELETE a post
-router.delete('/:id', (req, res) => {
+router.delete('/:id', securityAuth, (req, res) => {
     Post.destroy({
         where: {
             id: req.params.id
